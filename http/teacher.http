@@ -1,0 +1,20 @@
+###
+GET http://localhost:8080/api/teachers
+
+###
+POST http://localhost:8080/api/teachers
+Content-Type: application/json
+
+{
+    "document": 123456782,
+    "firstName": "Diego",
+    "secondName": "Johan",
+    "firstLastName": "Caceres",
+    "secondLastName": "Rivera",
+    "email": "djcaceres@email.com",
+    "phoneNumber": "5556661112",
+    "address": "Calle 1 # 2 - 03",
+    "additionalAddress": "Junto a la Clinica del Niño",
+    "salary": 120000,
+    "city": "Cali"
+}
