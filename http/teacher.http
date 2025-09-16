@@ -2,6 +2,18 @@
 GET http://localhost:8080/api/teachers
 
 ###
+GET http://localhost:8080/api/teachers/by_city/Iba
+
+###
+GET http://localhost:8080/api/teachers/by_name?name1=Cesar&lastname1=Diaz&name2=Augusto&lastname2=Arriaga
+
+###
+GET http://localhost:8080/api/teachers/by_name?lastname2=Rivera
+
+###
+GET http://localhost:8080/api/teachers/salary?salary=120000
+
+###
 POST http://localhost:8080/api/teachers
 Content-Type: application/json
 

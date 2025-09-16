@@ -19,4 +19,4 @@ Content-Type: application/json
 }
 
 ### Lista de ciudades por departamento
-GET http://localhost:8080/api/cities/by_department/t
+GET http://localhost:8080/api/cities/by_department/E
