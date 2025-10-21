@@ -1,16 +1,13 @@
 package com.devsenior.cdiaz.jpa.service;
 
 import java.util.List;
-
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
-
 import com.devsenior.cdiaz.jpa.model.dto.TeacherCreateRequest;
 import com.devsenior.cdiaz.jpa.model.dto.TeacherResponse;
 import com.devsenior.cdiaz.jpa.model.entity.City;
 import com.devsenior.cdiaz.jpa.model.entity.Teacher;
 import com.devsenior.cdiaz.jpa.repository.CityRepository;
-import com.devsenior.cdiaz.jpa.repository.CustomRepository;
 import com.devsenior.cdiaz.jpa.repository.TeacherRepository;
 
 @Service
@@ -18,13 +15,11 @@ public class TeacherServiceImpl implements TeacherService {
 
     private final TeacherRepository teacherRepository;
     private final CityRepository cityRepository;
-    private final CustomRepository customRepository;
 
-    public TeacherServiceImpl(TeacherRepository teacherRepository, CityRepository cityRepository,
-            CustomRepository customRepository) {
+    public TeacherServiceImpl(TeacherRepository teacherRepository, CityRepository cityRepository) {
         this.teacherRepository = teacherRepository;
         this.cityRepository = cityRepository;
-        this.customRepository = customRepository;
+
     }
 
     @Override
